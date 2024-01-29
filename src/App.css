@@ -1,0 +1,42 @@
+.App {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.wrapper {
+  position: relative;
+  background-color: var(--color-grey-primary);
+  margin: 1rem;
+  flex: 1 0 25rem;
+  max-width: 30rem;
+  max-height: 50rem;
+  transition: 0.2s;
+}
+
+.wrapper:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+}
+
+.card_img {
+  margin-top: 2rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.cardInfo {
+  position: absolute;
+  right: 0;
+  margin: 1rem;
+  font-size: 2rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
